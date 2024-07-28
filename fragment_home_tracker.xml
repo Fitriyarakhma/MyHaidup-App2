@@ -1,0 +1,423 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:text="My Haidup"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="@dimen/spacing_large"
+                android:text="Yuk catat berkala dan pantau empat kategori pengeluaran bulanan di tahun ini!"
+                android:textColor="@color/grey_40"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="3dp"
+                android:layout_marginVertical="@dimen/spacing_medium"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="1dp"
+                app:contentPadding="14dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="This Year Total"
+                        android:textColor="@color/grey_40"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="Rp.24,667,000"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="3dp"
+                android:layout_marginVertical="@dimen/spacing_medium"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="1dp"
+                app:contentPadding="14dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="This Year Total"
+                        android:textColor="@color/grey_40"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="Rp.24,667,000"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="3dp"
+                android:layout_marginVertical="@dimen/spacing_medium"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="1dp"
+                app:contentPadding="14dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <com.github.mikephil.charting.charts.BarChart
+                        android:id="@+id/chart"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:layout_marginTop="32dp" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="10dp"
+                android:text="Note"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="3dp"
+                android:layout_marginVertical="@dimen/spacing_medium"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="1dp"
+                app:contentPadding="12dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="05/7\nBeli bensin 25K\nNyogok peksos rara Dajik Fried Chicken 16k"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:src="@drawable/ic_more_horiz"
+                        app:tint="@color/black" />
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <ImageView
+                android:id="@+id/add"
+                android:layout_width="38dp"
+                android:layout_height="38dp"
+                android:layout_gravity="end"
+                android:layout_marginVertical="@dimen/spacing_large"
+                android:background="@drawable/bg_circle"
+                android:backgroundTint="@color/colorPrimary"
+                android:src="@drawable/ic_add"
+                app:tint="@color/white" />
+
+        </LinearLayout>
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/description">
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:stretchColumns="1">
+
+                    <TableRow>
+                        <TextView
+                            style="@style/TableCell"
+                            android:text="No" />
+
+                        <TextView
+                            style="@style/TableCell"
+                            android:text="Month" />
+
+                        <TextView
+                            style="@style/TableCell"
+                            android:text="Hunian" />
+
+                        <TextView
+                            style="@style/TableCell"
+                            android:text="Sembako" />
+
+                        <TextView
+                            style="@style/TableCell"
+                            android:text="Operasi" />
+
+                        <TextView
+                            style="@style/TableCell"
+                            android:text="Rekreasi" />
+
+                    </TableRow>
+
+                    <TableRow>
+                        <TextView
+                            style="@style/TableCell"
+                            android:text="1" />
+
+                        <TextView
+                            style="@style/TableCell"
+                            android:text="Januari" />
+
+                        <TextView
+                            style="@style/TableCell"
+                            android:text="Rp.700,000" />
+
+                        <TextView
+                            style="@style/TableCell"
+                            android:text="Rp.710,000" />
+
+                        <TextView
+                            style="@style/TableCell"
+                            android:text="Rp.720,000" />
+
+                        <TextView
+                            style="@style/TableCell"
+                            android:text="Rp.730,000" />
+                    </TableRow>
+
+                    <TableRow>
+                        <TextView
+                            style="@style/TableCell"
+                            android:text="2" />
+
+                        <TextView
+                            style="@style/TableCell"
+                            android:text="Februari" />
+
+                        <TextView
+                            style="@style/TableCell"
+                            android:text="Rp.740,000" />
+
+                        <TextView
+                            style="@style/TableCell"
+                            android:text="Rp.750,000" />
+
+                        <TextView
+                            style="@style/TableCell"
+                            android:text="Rp.760,000" />
+
+                        <TextView
+                            style="@style/TableCell"
+                            android:text="Rp.770,000" />
+                    </TableRow>
+
+                    <TableRow>
+                        <TextView
+                            style="@style/TableCell"
+                            android:text="3" />
+
+                        <TextView
+                            style="@style/TableCell"
+                            android:text="Maret" />
+
+                        <TextView
+                            style="@style/TableCell"
+                            android:text="Rp.780,000" />
+
+                        <TextView
+                            style="@style/TableCell"
+                            android:text="Rp.790,000" />
+
+                        <TextView
+                            style="@style/TableCell"
+                            android:text="Rp.800,000" />
+
+                        <TextView
+                            style="@style/TableCell"
+                            android:text="Rp.810,000" />
+                    </TableRow>
+
+                    <TableRow>
+                        <TextView
+                            style="@style/TableCell"
+                            android:text="4" />
+
+                        <TextView
+                            style="@style/TableCell"
+                            android:text="April" />
+
+                        <TextView
+                            style="@style/TableCell"
+                            android:text="Rp.820,000" />
+
+                        <TextView
+                            style="@style/TableCell"
+                            android:text="Rp.830,000" />
+
+                        <TextView
+                            style="@style/TableCell"
+                            android:text="Rp.840,000" />
+
+                        <TextView
+                            style="@style/TableCell"
+                            android:text="Rp.850,000" />
+                    </TableRow>
+
+                    <TableRow>
+                        <TextView
+                            style="@style/TableCell"
+                            android:text="5" />
+
+                        <TextView
+                            style="@style/TableCell"
+                            android:text="Mei" />
+
+                        <TextView
+                            style="@style/TableCell"
+                            android:text="Rp.860,000" />
+
+                        <TextView
+                            style="@style/TableCell"
+                            android:text="Rp.870,000" />
+
+                        <TextView
+                            style="@style/TableCell"
+                            android:text="Rp.880,000" />
+
+                        <TextView
+                            style="@style/TableCell"
+                            android:text="Rp.890,000" />
+                    </TableRow>
+
+                    <TableRow>
+                        <TextView
+                            style="@style/TableCell"
+                            android:text="6" />
+
+                        <TextView
+                            style="@style/TableCell"
+                            android:text="Juni" />
+
+                        <TextView
+                            style="@style/TableCell"
+                            android:text="Rp.900,000" />
+
+                        <TextView
+                            style="@style/TableCell"
+                            android:text="Rp.910,000" />
+
+                        <TextView
+                            style="@style/TableCell"
+                            android:text="Rp.920,000" />
+
+                        <TextView
+                            style="@style/TableCell"
+                            android:text="Rp.930,000" />
+                    </TableRow>
+
+                    <TableRow>
+                        <TextView
+                            style="@style/TableCell"
+                            android:text="7" />
+
+                        <TextView
+                            style="@style/TableCell"
+                            android:text="Juli" />
+
+                        <TextView
+                            style="@style/TableCell"
+                            android:text="Rp.940,000" />
+
+                        <TextView
+                            style="@style/TableCell"
+                            android:text="Rp.950,000" />
+
+                        <TextView
+                            style="@style/TableCell"
+                            android:text="Rp.960,000" />
+
+                        <TextView
+                            style="@style/TableCell"
+                            android:text="Rp.970,000" />
+                    </TableRow>
+
+
+                </TableLayout>
+
+        </HorizontalScrollView>
+
+        <View
+            android:layout_width = "match_parent"
+            android:layout_height = "50dp"/>
+
+    </LinearLayout>
+</ScrollView>
